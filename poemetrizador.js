@@ -208,7 +208,7 @@ function run(){
   if(showNormal){
     const rows = verses.map(line=>{
       const s=tokens(line).flatMap(w=>syllabifyWord(w));
-      return `${s.join("-")}  ---->  (${s.length} sílabas)`;
+      return `${s.join("-")}  🠒  (${s.length} sílabas)`;
     });
     sections.push(section("Separação normal", `<div class="mono">${rows.join("\n\n")}</div>`));
   }
@@ -222,7 +222,7 @@ function run(){
       const rhyme=rhymeKey(line)||"—";
       const ritmo=sc.stresses.sort((a,b)=>a-b).join(",");
       const coincide = coincidence(sc.stresses,[2,4,6,8,10]);
-      return `${pretty}  ---->  (${sc.count} sílabas${det}, ritmo: ${ritmo}). Rima com "${rhyme}".\n  (verso iâmbo ou acentos rítmicos [2,4,6,8,10][∪–], coincidência ${coincide}%).`;
+      return `${pretty}  🠒  (${sc.count} sílabas${det}, ritmo: ${ritmo}).\nRima com "${rhyme}".\n  (verso iâmbo ou acentos rítmicos [2,4,6,8,10][∪–], coincidência ${coincide}%).`;
     });
     sections.push(section("Com sinalefas", `<div class="mono">${rows.join("\n\n")}</div>`));
   }
