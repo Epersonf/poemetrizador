@@ -12,7 +12,7 @@ function run(){
   const showNormal = document.getElementById("showNormal").checked;
   const showSinalefa = document.getElementById("showSinalefa").checked;
 
-  const { normalRows, sinalRows, summaryHTML, lines } = Analyzer.analyze(text);
+  const { normalRows, sinalRows, summaryHTML } = Analyzer.analyze(text);
 
   const sections=[];
   if(showNormal){
