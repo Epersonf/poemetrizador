@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Poemetrizador</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="wrap">
+  <h1>Poemetrizador</h1>
+
+  <textarea title="Poema" id="inp">Na calma noite, a lua se derrama,
+O vento dança entre ramos ao luar,
+Silente a terra guarda o seu drama,
+E o rio canta histórias sem parar.
+
+O tempo passa em passo tão sereno,
+Que até o sonho ousa se demorar,
+No céu profundo, o brilho é tão pleno,
+Que a alma quer no brilho se ancorar.
+
+E nesse instante, eterno como chama,
+O mundo inteiro aprende a respirar.</textarea>
+
+  <div class="controls">
+    <button id="btn">Separar sílabas</button>
+    <label class="small"><input type="checkbox" id="showNormal" checked> Mostrar “Separação normal”</label>
+    <label class="small"><input type="checkbox" id="showSinalefa" checked> Mostrar “Com sinalefas”</label>
+    <span class="small">Sinalefas sempre destacadas.</span>
+  </div>
+
+  <div id="out"></div>
+</div>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>
